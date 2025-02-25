@@ -49,7 +49,7 @@ If you want to add your own private commands, you can create a `private_commands
 ## Installation
 
 Requirements:
-- python 3 (3.7.0rc1 is known to work), `pip`, and `virtualenv`
+- python 3 (3.10 is known to work), `pip`, and `virtualenv`
 - You will also need `jq` (https://stedolan.github.io/jq/) and the library `pyjq` (https://github.com/doloopwhile/pyjq), which require some additional tools installed that will be shown.
 
 On macOS:
@@ -60,7 +60,7 @@ git clone https://github.com/duo-labs/cloudmapper.git
 # Install pre-reqs for pyjq
 brew install autoconf automake awscli freetype jq libtool python3
 cd cloudmapper/
-python3 -m venv ./venv && source venv/bin/activate
+python3.10 -m venv ./venv && source venv/bin/activate
 pip install --prefer-binary -r requirements.txt
 ```
 
@@ -74,7 +74,7 @@ git clone https://github.com/duo-labs/cloudmapper.git
 # You may additionally need "build-essential"
 sudo apt-get install autoconf automake libtool python3.7-dev python3-tk jq awscli
 cd cloudmapper/
-python3 -m venv ./venv && source venv/bin/activate
+python3.10 -m venv ./venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
 
